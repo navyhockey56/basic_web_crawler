@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'pry'
+require 'crawler'
+require 'crawlers/basic_crawler'
+
+
+# Call this to update code while within pry.
+# Don't forget to add any new ruby files here when
+# they are created.
+def reload 
+  load 'crawler.rb'
+  load 'crawler_tools.rb'
+  load 'crawlers/basic_crawler.rb'
+end
+
+Pry.start
+
+
+
